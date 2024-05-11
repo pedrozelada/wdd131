@@ -6,12 +6,17 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Pedro Zelada</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals. Pedro Rafael Zelada Soruco. Content about me" />
     <meta name="author" content="Pedro Zelada" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
 
     <header>
-        <h1> WDD 131: Dynamic Web Fundamentals - Pedro R. Zelada Soruco</h1>
+        <h1> WDD 131: Dynamic Web Fundamentals - <a href="https://pedrozelada.github.io/wdd131/" class="active">Pedro R. Zelada Soruco</a></h1>
         <nav>
             <ul class="navigation">
                 <li><a href="https://www.linkedin.com/in/pedro-zelada" target="_blank" title="LinkedIn Profile">LinkedIn</a></li>
@@ -24,10 +29,44 @@
     </header>
 
     <main>
+        <section  class="card">
+            <h2>About me</h2>
+
+                <div class="about-section">
+                    <p> I was born in Tarija, a small city in the south of Bolivia. I work giving support classes to calculus students, I like mathematics. In my free time I like to play violin, play chess and watch some series.</p>
+                    <picture>
+                        <img src="images/profilePedro.png" alt="Profile picture">
+                    </picture>
+                </div>
+               
+                <h3>Tarija, Bolivia</h3>
+                <div class="about-country">
+                    <picture>
+                        <img src="images/bolivia.png" alt="Bolivia Flag">
+                    </picture>
+                    <p> Bolivia is located in central South America and is the fifth-largest country on the continent. It is known for its diverse geography, including the Andes Mountains, the Altiplano plateau, the Amazon Rainforest, and the Gran Chaco region.</p> 
+                </div>
+            
+        </section>
+        
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="navigation">
+                <li><a href="https://www.khanacademy.org/" target="_blank" title="khanacademy">Khan Academy</a></li>
+                <li><a href="https://www.codementor.io/" target="_blank" title="codementor">Codementor</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank" title="freeCodeCamp">freeCodeCamp</a></li>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank" title="geeksforgeeks">GeeksforGeeks</a></li>
+            </ul>
+
+
+        </section>
 
     </main>
 
     <footer>
+        <p id="year"></p>
+
+        <p id="last"></p>
 
     </footer>
     
