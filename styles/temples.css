@@ -37,7 +37,7 @@ nav ul {
     
 }
 nav ul.open {
-	display: flex; /* Show the navigation menu when the 'open' class is added */
+	display: flex; 
 	flex-direction: column;
 }
 
