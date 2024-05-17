@@ -11,8 +11,6 @@ header {
 	box-shadow: 0 0 30px #333;
 }
 
-
-
 h1 {
     background-color: #29537f;
     text-align: center;
@@ -20,13 +18,11 @@ h1 {
     margin: 0;
     padding: 10px;
     font-size: 23px;
-
 }
 
 nav {
 	display: flex;
 	flex-direction: column
-    
 }
 
 nav ul {
@@ -41,7 +37,6 @@ nav ul.open {
 	flex-direction: column;
 }
 
-
 nav a {
     display: block;
     color: #fff;
@@ -54,7 +49,6 @@ nav a:hover {
     text-decoration: underline double; 
 }
 
-
 .active {
     color: yellow;
 }
@@ -62,17 +56,18 @@ nav a:hover {
 h2 { 
     margin-top: 30px;
     text-align: center;
-    
-
 }
 
 main {
     max-width: 80%;
     margin: 0 auto; 
-    
-    
 }
 
+.container {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 25px;place-items: center;
+}
 
 figure {
     text-align: center; 
@@ -104,8 +99,6 @@ img {
 	content: "❎";
 }
 
-
-
 footer {
     margin-top: 20px; 
     text-align: center; 
@@ -113,7 +106,6 @@ footer {
     color: #fff;
     padding: 20px;
 }
-
 
 footer p {
     font-size: 14px;
