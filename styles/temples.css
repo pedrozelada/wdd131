@@ -96,7 +96,7 @@ img {
 }
 
 #menu.open::before {
-	content: "❎";
+	content: "X";
 }
 
 footer {
