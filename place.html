@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moscow</title>
+        <meta name="description" content="Moscow">
+        <meta name="author" content="Pedro R. Zelada Soruco">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="stylesheet" href="styles/place-mobile.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Moscow</h1>
+    </header>
+    <div id="blue"></div>
+    <main>
+        <picture class="background-image">
+            <source media="(min-width:1000px)" srcset="images/moscow-large1.webp">
+            <source media="(min-width:500px)" srcset="images/moscow-medium.webp">
+            <img src="images/moscow-small.webp" alt="image moscow">
+        </picture>
+        
+        <section class="data">
+            <h2>Data</h2>
+            <div class="div-table">
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Area: </b> </div>
+                    <div class="div-table-col2"> 2,561 км²</div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Population: </b></div>
+                    <div class="div-table-col2"> 13,149,803 (2024)</div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Languages: </b></div>
+                    <div class="div-table-col2"> Russian</div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Currency: </b></div>
+                    <div class="div-table-col2"> Rouble (RUB)</div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Time Zone:</b></div>
+                    <div class="div-table-col2"> 2,561 км²</div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Calling Code: </b></div>
+                    <div class="div-table-col2"> +7 499, +7 495</div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Foundation: </b></div>
+                    <div class="div-table-col2"> 1147</div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <picture>
+            <img  src="images/weather_icon.svg" alt="weather_icon">
+            </picture>
+            <div class="div-table">
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Temperature: </b></div>
+                    <div class="div-table-col2"> <label id="temperature"></label></div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Conditions: </b></div>
+                    <div class="div-table-col2"> <label id="conditions"></label></div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Wind: </b></div>
+                    <div class="div-table-col2"><label id="wind"></label></div>
+                </div>
+                <div class="div-table-row">
+                    <div class="div-table-col"><b>Wind Chill: </b></div>
+                    <div class="div-table-col2"><label id="wind-chill"></label></div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p id="year"></p>
+        <p id="last"></p>
+    </footer>
+    
+</body>
+</html>
