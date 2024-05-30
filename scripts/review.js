@@ -1,13 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
-    
-    if (localStorage.getItem("reviewCount")) {
-        let reviewCount = parseInt(localStorage.getItem("reviewCount"));
-        reviewCount++;
-        localStorage.setItem("reviewCount", reviewCount);
-    } else {
-        localStorage.setItem("reviewCount", 1);
-    }
 
-    const reviewCountDisplay = document.getElementById("reviewCountDisplay");
-    reviewCountDisplay.textContent = localStorage.getItem("reviewCount");
-});
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+	visitsDisplay.textContent = numVisits;
+} else {
+	visitsDisplay.textContent = 1;
+}
+
+numVisits++;
+
+
+localStorage.setItem("numVisits-ls", numVisits);
+
+

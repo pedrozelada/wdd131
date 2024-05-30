@@ -43,17 +43,17 @@ document.addEventListener("DOMContentLoaded", function() {
   stars.forEach(star => {
       star.addEventListener('change', function() {
           if (document.querySelector('.stars input:checked')) {
-              requiredIndicator.style.color = 'green';
+              requiredIndicator.style.color = 'rgb(0, 100, 0)';
           } else {
-              requiredIndicator.style.color = 'red';
+              requiredIndicator.style.color = '#b81414';
           }
       });
   });
 
     if (document.querySelector('.stars input:checked')) {
-      requiredIndicator.style.color = 'green';
+      requiredIndicator.style.color = 'rgb(0, 100, 0)';
   } else {
-      requiredIndicator.style.color = 'red';
+      requiredIndicator.style.color = '#b81414';
   }
 
 });
