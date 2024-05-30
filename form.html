@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="Form">
+    <meta name="author" content="Pedro R. Zelada Soruco">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="form1">
+            <label for="product">Product Name
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </label>
+            <div>Overall Rating<span class="required">*</span></div>
+            <div class="stars" required>
+                <label for="oneStar">☆<br><input id="oneStar" type="radio" name="rating" value="oneStar" required></label>
+                <label for="twoStar">☆☆<br><input id="twoStar" type="radio" name="rating" value="twoStar" required></label>
+                <label for="threeStar">☆☆☆<br><input id="threeStar" type="radio" name="rating" value="threeStar" required></label>
+                <label for="fourStar">☆☆☆☆<br><input id="fourStar" type="radio" name="rating" value="fourStar" required></label>
+                <label for="fiveStar">☆☆☆☆☆<br><input id="fiveStar" type="radio" name="rating" value="fiveStar" required></label>
+             </div>
+            
+        
+            <label for="completeDate">Date of Installation <input id="completeDate" type="date" name="completeDate" required></label>
+        
+            <div class="box">Which features did you find useful in the product?<br>(Check all that apply)
+                <label for="durability"><input id="durability" type="checkbox" name="durability" value="yes">Durability</label>       
+                <label for="use"><input id="use" type="checkbox" name="use" value="yes">Ease of use</label>
+                <label for="performance"><input id="performance" type="checkbox" name="performance" value="yes">Performance</label>
+                <label for="design"><input id="design" type="checkbox" name="design" value="yes">Design</label>
+            </div> 
+        
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+        
+            <label for="name">Your Name (Optional)<input id="name" type="text" name="name"></label>
+        
+            <input type="submit" value="Post Review">
+        </form>    
+
+
+    </main>
+
+    <footer>
+        <p id="year"></p>
+        <p id="last"></p>
+    </footer>
+    
+</body>
+</html>

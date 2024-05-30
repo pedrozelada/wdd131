@@ -1,0 +1,116 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header, footer {
+    background-color: blue; 
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+
+.form1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #eaf4ff; 
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.form1 label {
+    display: block;
+    padding-top: 1.5rem;
+    font-size: 1rem;   
+} 
+
+.form1 div{
+    padding-top: 1.5rem;
+    
+    font-size: 1rem;
+}
+
+.form1 input[type="text"],
+.form1 input[type="date"],
+.form1 select,
+.form1 textarea
+{
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+}
+
+.stars {
+    margin-top: -3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    width: 100%;
+    max-width: 420px;
+    
+}
+
+.stars label {
+    text-align: center; 
+    margin-bottom: 10px; 
+    
+}
+
+.form1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.box label{
+    margin-top: -1rem;
+}
+
+#review {
+    height: 80px;
+}
+
+.form1 input[type="submit"]{
+    border:none;
+    border-radius: 6px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.form1 input:required,
+.form1 select:required,
+.stars:required {
+    background-color:  rgb(252, 226, 226);
+}
+
+.form1 input:required:valid,
+.form1 select:required:valid,
+.stars:required:valid {
+    background-color:  rgb(224, 249, 225);
+}
+
+
+
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+}
