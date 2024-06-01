@@ -6,7 +6,7 @@ body {
 
 }
 header, footer {
-    background-color: blue; 
+    background-color: #000080; 
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -24,7 +24,7 @@ h1, h2 {
 }
 
 h2 {
-    color: blue;
+    color: #000080;
 }
 p {
     font-family: 'Arial', sans-serif;
