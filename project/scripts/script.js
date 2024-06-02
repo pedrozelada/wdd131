@@ -1,3 +1,4 @@
+// Year and Last Modified
 const year = document.querySelector("#year");
 let last = document.querySelector("#last");
 
@@ -26,3 +27,11 @@ let formattedDate = `${month}/${day}/${yearf} ${hours}:${minutes}:${seconds}`;
 
 last.innerHTML = `Last Modification ${formattedDate}`;
 
+// For button
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});

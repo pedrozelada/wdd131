@@ -1,0 +1,49 @@
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduction {
+    margin-bottom: 40px;
+}
+
+.book1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+   
+}
+
+div p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 30px;
+    max-width: 100%;
+    flex: 1;
+}
+
+img {
+    width: 240px;
+    height: auto;
+    border-radius: 5%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 30px #777;
+    margin-left: 40px;
+    
+}
+
+
+@media screen and (min-width: 640px){
+    main { 
+        max-width: 64rem;
+        margin:auto;
+    }
+
+}

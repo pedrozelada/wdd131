@@ -32,6 +32,14 @@ h1 {
     font-size: 23px;
 }
 
+h2 {
+    
+    font-family: 'Georgia', serif;
+    color: #000080;
+    text-align: center;
+}
+
+
 nav {
 	display: flex;
 	flex-direction: column
@@ -90,4 +98,27 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 
+}
+
+
+@media screen and (min-width: 640px){
+    header {
+		display: flex;
+		align-items: center;
+	    justify-content: space-between;
+	}
+	
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+    nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+    #menu {
+		display: none; 
+	}
 }
